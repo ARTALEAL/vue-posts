@@ -6,6 +6,9 @@
         <router-link class="nav-link" to="/posts">Посты</router-link>
       </li>
       <li class="nav-item">
+        <router-link class="nav-link" to="/posts-store">Посты Vuex</router-link>
+      </li>
+      <li class="nav-item">
         <router-link class="nav-link" to="/about">О проекте</router-link>
       </li>
     </ul>
