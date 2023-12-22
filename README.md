@@ -38,4 +38,4 @@ npm run serve
 npm run build
 ```
 
-### Ссылка на проект [https://artaleal.github.io/vue-posts/](Vue posts)
+### Ссылка на проект [Vue posts](https://artaleal.github.io/vue-posts/)
