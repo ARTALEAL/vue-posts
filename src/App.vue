@@ -3,12 +3,14 @@
   <div class="app">
     <router-view></router-view>
   </div>
+  <my-footer></my-footer>
 </template>
 
 <script>
 import NavBar from './components/UI/NavBar.vue';
+import MyFooter from './components/MyFooter.vue';
 export default {
-  components: { NavBar },
+  components: { NavBar, MyFooter },
 };
 </script>
 
@@ -24,6 +26,7 @@ h1 {
 }
 .app {
   padding: 20px;
+  min-height: calc(100vh - 100px);
 }
 
 .app__btns {
