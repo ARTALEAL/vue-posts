@@ -41,6 +41,7 @@ export default {
         title: '',
         body: '',
       };
+      this.$emit('close-after', false);
     },
   },
 };
