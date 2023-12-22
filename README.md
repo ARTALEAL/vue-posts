@@ -1,5 +1,7 @@
 # Vue3-Posts
 
+## Проект ещё в разработке!
+
 ## Project setup
 
 ```

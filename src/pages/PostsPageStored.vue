@@ -1,6 +1,6 @@
 <template>
   <main class="posts">
-    <h1>Страница с постами</h1>
+    <h1>Страница с постами (Vuex)</h1>
     <input
       class="search-input"
       type="text"
