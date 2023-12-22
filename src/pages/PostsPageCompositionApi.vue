@@ -32,7 +32,6 @@ import PostListVue from '@/components/PostList.vue';
 import MyButton from '@/components/UI/MyButton.vue';
 import MyModal from '@/components/UI/MyModal.vue';
 import MySelect from '@/components/UI/MySelect.vue';
-import { ref } from 'vue';
 import { usePosts } from '@/hooks/usePosts';
 import { useSortedPosts } from '@/hooks/useSortedPosts';
 import { useSortedAndSearchedPosts } from '@/hooks/useSortedAndSearchedPosts';

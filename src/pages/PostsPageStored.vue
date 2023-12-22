@@ -24,7 +24,7 @@
     <post-list-vue
       v-if="!isLoading"
       :posts="sortedAndSearchedPost"
-      @delete-post="deletePost"
+      @delete-post="setDeletePost"
     />
     <div v-else>Идёт загрузка...</div>
     <div v-intersection="loadMorePosts" class="observer"></div>
@@ -36,7 +36,6 @@ import PostFormVue from '@/components/PostForm.vue';
 import PostListVue from '@/components/PostList.vue';
 import MyButton from '@/components/UI/MyButton.vue';
 import MyModal from '@/components/UI/MyModal.vue';
-import axios from 'axios';
 import MySelect from '@/components/UI/MySelect.vue';
 import { mapState, mapActions, mapGetters, mapMutations } from 'vuex';
 
@@ -61,17 +60,16 @@ export default {
       setPage: 'post/setPage',
       setSearchQuery: 'post/setSearchQuery',
       setselectedSort: 'post/setselectedSort',
+      setDeletePost: 'post/setDeletePost',
+      setAddPost: 'post/setAddPost',
     }),
     ...mapActions({
       loadMorePosts: 'post/loadMorePosts',
       fetchPosts: 'post/fetchPosts',
     }),
     addPost(newPost) {
-      this.posts.push(newPost);
+      this.setAddPost(newPost);
       this.closeModal(false);
-    },
-    deletePost(post) {
-      this.posts = this.posts.filter((item) => item.id !== post.id);
     },
     closeModal(status) {
       this.isOpenModal = status;

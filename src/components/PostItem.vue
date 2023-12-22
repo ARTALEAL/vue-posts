@@ -53,4 +53,13 @@ export default {
   color: white;
   background-color: darkred;
 }
+
+@media (width <= 600px) {
+  .post {
+    flex-direction: column;
+  }
+  .post-btns {
+    margin-top: 15px;
+  }
+}
 </style>
